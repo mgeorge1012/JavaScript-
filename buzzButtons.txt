@@ -1,0 +1,38 @@
+// Program name: Buzz Buttons
+// Purpose: Pseudocode for fixed-price items to order, sales tax and shipping rate 
+// Author: Maggie George 
+// Date: 2015-05-30
+
+Start
+
+	// Declare  String custName			//customer's name for button
+	   Declare 	String custEmail		// customer's email address
+	   Declare 	Numeric numButtons 		// number of buttons to order 
+	   Declare 	Constant itemprice 		// fixed item price 
+	   Declare 	Constant salestaxrate 	// sales tax rate
+	   Declare	Constant shippingfee  	// flat rate shipping fee
+	   Declare 	Numeric buttonPriceTotal //total amount for buttons
+	   Declare	Numeric salesTaxAmt		 // sales tax amount 
+	   Declare Numeric 	orderTotal		// total amount for order 
+	   
+	// Welcome the user, ask for name,e mail and # of butttons 
+		Display "Welcome to BuzzButtons: It Starts the Buzz!"
+		Display "What name would you like on the buttons?"
+		Input custName 
+		Display "What is your email address?"
+		Input custEmail
+		Display "How many buttons would you like (at 99 cents each)?"
+		Input numButtons
+		
+	// Calculate button price, sales tax, order total and display all information
+	buttonPriceTotal = numButtons * itemprice 
+	orderTotal = buttonPriceTotal + salesTaxAmt + shippingfee
+	Display "Number of buttons ordered: " + numButtons
+	Display "Total for buttons: " + buttonPriceTotal 
+	Display "Sales tax (6%): " + salesTaxAmt
+	Display "Shipping fee: " + shippingfee
+	Display "Total amount of order: " + orderTotal
+		
+	// Thank the user and end the program
+		Display "Thank you!"
+Stop
