@@ -1,0 +1,47 @@
+<html>
+<body>
+<script type="text/javascript">
+
+//Program name: Maximum of three sales 
+// Purpose: Asks user for three sales amounts
+// Author: Maggie George 
+// Date: 2015-09-30
+
+// Variables and constants 
+
+var amount1;		 // user enters first sale amount 
+var amount2;		 // user enters second sale amount 
+var amount3; 		 // user enters third sale amount 
+var finalres;		 // final result 
+var BR = "<br />";   // HTML line break
+var ES = "";         // empty string for prompt
+
+// Welcome the user and explain the program's purpose 
+	document.write("Welcome to the Max of Three Program" + BR );
+	document.write("This programs asks for three sales amounts, ");
+	document.write("and then displays the results, " + BR); 
+	
+// Prompt user for the first sale amount 
+	amount1= prompt("Enter the first sale amount:",ES); 
+	amount1= parseFloat(amount1); 
+	
+// Prompt user for the second sale amount 
+	amount2= prompt("Enter the second sale amount:",ES); 
+	amount2= parseFloat(amount2); 
+
+// Prompt user for the third sale amount 
+	amount3=prompt("Enter the third sale amount:",ES); 
+	amount3= parseFloat(amount3); 
+	
+// Compute and display the maximum of three sales 
+
+finalres = Math.max(amount1, amount2, amount3);
+document.write("The result of the three maximum sales are: " + finalres.toFixed(2) + BR); 
+
+// Thank the user and end the program
+document.write("Thank you for using this program!" + BR);
+
+</script>
+</body>
+</html>
+	
