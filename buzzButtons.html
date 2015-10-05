@@ -1,0 +1,46 @@
+<html>
+<body>
+<script type="text/javascript">
+
+//Program name: Buzz Buttons  
+// Purpose: Takes orders for buttons 
+// Author: Maggie George 
+// Date: 2015-09-30
+
+// Variables and Constants 
+	var custName;  // customer's name for button
+	var custEmail;	// customer's email address 
+	var numButtons;	// number of buttons to order 
+	var itemprice = 0.99; 	// fixed item price 
+	var salestaxrate = 0.06; // sales tax rate 
+	var shippingfee = 2.00; // flat rate shipping fee 
+	var buttonPriceTotal; // total amount for buttons 
+	var salesTaxAmt; 		// sales tax amount 
+	var orderTotal;			// total amount for order 
+	var BR = "<br />";		// html line break tag 
+	var PA = "<p />"; 		// html paragraph break tag 
+	var ES = "";			// empty string 
+
+// Welcome the user, ask for name, email and number of buttons 
+	document.write ("Welcome to BuzzButtons: It starts with the Buzz!" + BR);
+	custName = prompt("What name would you like on your buttons?",ES);
+	custEmail = prompt("What is your email address?",ES);
+	numButtons = prompt ("How many buttons would you like? (0.99 cents each) " ,ES);
+	numButtons = parseInt(numButtons); 
+
+// Calculate the button price, sales tax, order total and display all information
+	buttonPriceTotal = numButtons * itemprice;
+	salesTaxAmt = buttonPriceTotal * salestaxrate;
+	ordertotal = buttonPriceTotal + salesTaxAmt + shippingfee;
+	document.write("Number of buttons ordered: " + numButtons + BR); 
+	document.write ("Total for buttons: $" + buttonPriceTotal.toFixed(2) + BR); 
+	document.write ("Sales tax(6%): $" + salesTaxAmt.toFixed(2) + BR);
+	document.write ("Shipping fee: $" + shippingfee.toFixed(2) + BR); 
+	document.write ("Total amount of order: $ " + ordertotal.tofixed(2) + BR)
+
+//Thank the user and end the program 
+	document.write("Thank you! We will email you for shipping information. " + BR);
+
+</script>
+</body>
+</html>
