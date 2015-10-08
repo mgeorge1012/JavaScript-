@@ -1,0 +1,65 @@
+<html>
+<body>
+<script type="text/javascript">
+
+// Program Name: Test Review: floorcalc.html 
+// Author: Maggie George
+// Date: 2015-10-05
+// Purpose: calcutes how much it costs to cover the floor in a room
+
+// Variables and constants 
+var name;    		//	User enters name 
+var length;			// length of room 
+var width; 			// width of room 
+var priceSqFt; 		// price per square feet 
+var labourCost; 	// price for labour cost 
+var floorTotal; 	// Floor total 
+var TAXRATE = 0.13; // Tax percentage 
+var subtotal; 		// display subtotal 
+var tax;	  		// total tax 
+var grandTotal; 	// display grand total 
+var BR = "<br>"; 	// HTML line break 	
+
+// Customer information 
+
+name = prompt("Please enter your name: ");
+
+length = prompt("Please enter the length of the room: "); 
+length = parseFloat(length); 
+
+width = prompt("Please enter the width of the room: "); 
+width = parseFloat(width); 
+
+priceSqFt = prompt ("Please enter cost per square foot "); 
+priceSqFt = parseFloat(priceSqFt);
+
+labourCost = prompt ("Please enter the total labour cost: "); 
+labourCost = parseFloat(labourCost); 
+
+
+
+// Calculations and Process data 
+floorTotal = (length * width) * priceSqFt;
+subtotal = floorTotal + labourCost;
+tax = subtotal * TAXRATE;
+grandTotal = subtotal + tax; 
+
+
+//Output results 
+document.write ("Customers name: " + name + BR); 
+document.write ("Length of room: " + length.toFixed(3) + BR);
+document.write ("Width of room: " + width.toFixed(3) + BR); 
+document.write ("Cost per square foot: " + priceSqFt.toFixed(2) + BR);
+document.write ("Labour cost: $" + labourCost.toFixed(2) + BR + BR); 
+document.write ("Total cost of material: $" + floorTotal.toFixed(2) + BR); 
+document.write ("Subtotal with Labour: $" + subtotal.toFixed(2) + BR);
+document.write ("Total taxes: $" + tax.toFixed(2) + BR);
+document.write ("Grand total: $" + grandTotal.toFixed(2) + BR);
+
+//Thank the user and end the program 
+document.write("Thank you for using this program!")
+
+
+</script>
+</body>
+</html>
