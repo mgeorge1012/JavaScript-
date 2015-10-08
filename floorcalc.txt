@@ -1,0 +1,61 @@
+// Program name: test review floorcalc.txt 
+// Name: Maggie George
+// Date: 2015-10-05
+// Purpose: calcutes how much it costs to cover the floor in a room
+
+Start 
+// Variables needed 
+
+	Declare String name
+	Declare Float length
+	Declare Float width
+	Declare Float priceSqFt 
+	Declare Float labourCost 
+	Declare Float floorTotal 
+	Declare Float TAXRATE = 0.13
+	Declare Float subtotal 
+	Declare Float tax
+	Declare Float grandTotal 
+	
+	
+// Input from user 
+	Display "Please enter your name: "
+	Input name 
+	
+	Display "Please enter the length of the room: "
+	Input length
+	
+	Display "Please enter the width of the room: "
+	Input width 
+	
+	Display "Please enter cost per square foot: "
+	Input priceSqFt 
+	
+	Display "Please enter the total labour cost: "
+	Input labourCost 
+	
+//Calculations and Process data 
+
+	floorTotal = (length * width) * priceSqFt 
+	subtotal = floorTotal + labourCost
+	tax = subtotal * TAXRATE
+	grandTotal = subtotal * tax 
+	
+// Output results
+	
+	Display "Customer name: " + name 
+	Display "Length of room: " + length 
+	Display "Width of room: " + width 
+	Display "Cost per square foot: " + priceSqFt
+	Display "Labour cost: " + labourCost 
+	Display ""
+	Display "Total cost of material: " + floorTotal
+	Display "Subtotal with Labour: " + subtotal
+	Display "Total Taxes: " + tax 
+	Display "Grand total: " + grandTotal
+	
+	//Thank the user
+	Display "Thank you for using this program!"
+	
+Stop 
+	
