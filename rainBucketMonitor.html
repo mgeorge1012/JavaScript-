@@ -1,0 +1,31 @@
+<html>
+<body>
+<script type="text/javascript">
+
+// Program name: rainBucketMonitor.html 
+// Author: Maggie George
+// Purpose: Tracking the amount of rain accumulated in the bucket
+// Date: October 19th 2015 
+
+	// Variables and Constants 
+	var ES = "";        // literal empty string
+	var BR = "<br />";  // HTML line break tag
+	var waterLevel;	 	// water level 
+	
+	//Welcome the user, explain the program 
+	document.write("Welcome!" + BR);
+	document.write("This program is designed to track the amount of rain accumulated in a 25-liter bucket" + BR);
+	
+	// prompt the user 
+	waterLevel = prompt("Enter the water level: " + ES); 
+	
+	// IF statement and Math 
+	
+	if (waterLevel >=20) { document.write("Empty the bucket please."); // tells the user to empty the bucket
+	} 
+	else {
+	document.write("Come back in 10 minutes to run the program again.") // tells the user to come back 
+	}
+	</script>
+	</body>
+	</html>
