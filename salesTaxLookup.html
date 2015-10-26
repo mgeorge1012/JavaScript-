@@ -1,0 +1,59 @@
+<html>
+
+<body>
+    <script type="text/javascript">
+        // Program name: salesTaxLookup.html
+        // Purpose: Calculate Sales Tax
+        // Author: Margueritte George
+        // Date last modified: October 22th 2015 
+
+        //variables and constants 
+		var salesTax 	// tax
+		var PA 
+		var ES = "";       // empty string
+		var PA = "<p />";  // HTML paragraph break
+
+		// welcome the user 
+        document.write("Welcome to sales tax calculator!" + PA);
+        salesTax = prompt("Enter your total amount of salesTax: ", ES);
+        salesTax = parseFloat(salesTax);
+
+        // calculate
+
+        if(salesTax <=99) {;
+		
+		if(salesTax <=7) {
+		document.write("No tax.");
+		}
+		else if (salesTax <=21){
+		document.write("1 cent tax.");
+		}
+		else if (salesTax <=35){
+		document.write("2 cent tax.");
+		}
+		else if (salesTax <=49){
+		document.write("3 cent tax."); 
+		}
+		else if (salesTax <=64){
+		document.write("4 cents tax.");
+		}
+		else if (salesTax <=78){
+		document.write("5 cents tax.");
+		}
+		else if (salesTax<=92) {
+		document.write("6 cents tax.");
+		}
+		else if (salesTax<=99){
+		document.write("7 cents tax.");
+		}
+		
+		
+		}
+		else{
+		document.write("Invaild Entry. Please try again.");
+		}
+		
+		
+	</script
+	</body>
+	</html>
