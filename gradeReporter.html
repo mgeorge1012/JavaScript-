@@ -1,0 +1,24 @@
+<head>
+<script type="text/javascript">
+var percent = parseFloat(percent * 1.03);
+var absences = parseInt(absences);
+
+if (absences >= 5) {
+document.write("You have failed because of amount of absences")
+}
+else if (percent>=90 && percent<=100){
+	if (absences <=2)
+	document.write("You have gained 3% to your grade")
+	document.write("Your grade: A" * percent)
+	}
+	else {
+	document.write("Your grade: A")
+	}
+	
+	else if (percent>=80 && percent<=89.9) {
+		if (absences <=2){
+		document.write("You have gained 3% to your grade.")
+		document.write("Your grade: B")
+		}}
+	
+	
