@@ -1,0 +1,34 @@
+<html>
+<head>
+<script type="text/javascript">
+// Program name: numberfunctions.html
+// Purpose: Sends two numbers as arguments to four arithmetic functions 
+// Author: Maggie George 
+// Date last modified: November 25th 2015
+function multiply(n1, n2) {
+    return n1 * n2;
+}
+
+function divide(n1, n2) {
+    return n1 / n2;
+}
+
+function modulus(n1, n2) {
+    return n1 % n2;
+}
+
+var theFirstNumber = parseInt(prompt("What is the first number?"));
+var theSecondNumber = parseInt(prompt("What is the second number?"));
+
+var multiplyResult = multiply(theFirstNumber, theSecondNumber);
+var divideResult = divide(theFirstNumber, theSecondNumber);
+var modulusResult = modulus(theFirstNumber, theSecondNumber);
+
+document.write("Multiply Result: " + multiplyResult + "<br/>");
+document.write("Divide Result: " + divideResult + "<br/>");
+document.write("Modulus Result: " + modulusResult + "<br/>");
+</script>
+</head>
+<body>
+</body>
+</html>
